@@ -1,7 +1,7 @@
 run: compile
-	./test example.txt
+	./solution example.txt
 compile:
-	ghc Dijkstra.hs Test.hs -o test
+	ghc Dijkstra.hs Solution.hs -o solution
 clean:
 	rm *.hi || true
 	rm *.o || true
