@@ -37,7 +37,7 @@ movement ma (py,px)
     | otherwise             = moves'
     where
     moves = step (py,px)
-    moves' = filter (\(f,(y,x)) -> y>0 && x>0 && y<M.nrows ma && x<M.ncols ma
+    moves' = filter (\(f,(y,x)) -> y>0 && x>0 && y<=M.nrows ma && x<=M.ncols ma
         && ma M.! (y,x) /= '#') moves
     tpoints = map (\p -> (1.5,p)) $ levelFind ma 'x'
 
