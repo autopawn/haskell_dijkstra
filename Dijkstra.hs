@@ -41,8 +41,7 @@ pathTo clos ini end = let
 {- Retrieves the minimum total cost list of movements (cost,next state)
 from he initial state s0 to the goal.
 The list starts with (0,s0).
-If there is no path, a null list is retrieved.
--}
+If there is no path, a null list is retrieved. -}
 dijkstra :: (Ord s) =>
     (s -> [(Float,s)]) -> s -> s -> [(Float,s)]
 dijkstra moves s0 goal
